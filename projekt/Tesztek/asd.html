@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop Kosár</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asd.css" rel="stylesheet"> <!-- Hivatkozás a CSS fájlra -->
+</head>
+<body>
+    <div class="container">
+        <h1>Termékek</h1>
+        <div class="row">
+            <div class="col-lg-2 product">
+                <h2>Alma</h2>
+                <button class="btn btn-primary add-to-cart" data-name="Alma" data-price="1010100">Kosárba</button>
+            </div>
+            <div class="col-lg-2 product">
+                <h2>Banán</h2>
+                <button class="btn btn-primary add-to-cart" data-name="Banán" data-price="2000">Kosárba</button>
+            </div>
+            <div class="col-lg-2 product">
+                <h2>Barack</h2>
+                <button class="btn btn-primary add-to-cart" data-name="Barack" data-price="2030">Kosárba</button>
+            </div>
+            <div class="col-lg-2 product">
+                <h2>Dinnye</h2>
+                <button class="btn btn-primary add-to-cart" data-name="Dinnye" data-price="1800">Kosárba</button>
+            </div>
+            <div class="col-lg-2 product">
+                <h2>Körte</h2>
+                <button class="btn btn-primary add-to-cart" data-name="Körte" data-price="1110">Kosárba</button>
+            </div>
+            <div class="col-lg-2 product">
+                <h2>Narancs</h2>
+                <button class="btn btn-primary add-to-cart" data-name="Narancs" data-price="2000">Kosárba</button>
+            </div>
+        </div>
+
+        <div id="cart">
+            <h1>Kosár</h1>
+            <div id="cart-items">
+                <p>A kosár üres</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="asd.js"></script>
+</body>
+</html>

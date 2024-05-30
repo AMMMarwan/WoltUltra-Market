@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megrendelés</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dsa1.css" rel="stylesheet"> <!-- Hivatkozás a CSS fájlra -->
+
+</head>
+<body>
+    <div class="container">
+        <h1>Kosár tartalma</h1>
+        <div id="cart-items">
+            <p>A kosár üres</p>
+        </div>
+        <button class="btn btn-success" onclick="placeOrder()">Megrendelés</button>
+    </div>
+
+    <script src="dsa1.js"></script>
+    <script>
+        // Megrendelés gomb működése
+        function placeOrder() {
+            alert("Megrendelés elküldve!");
+            // Megrendelés elküldése után a kosár ürítése
+            localStorage.removeItem('cart');
+            cart = [];
+            updateCartDisplay();
+        }
+        
+        // Az oldal betöltésekor betöltjük a kosár tartalmát
+        window.addEventListener('load', loadCart);
+    </script>
+</body>
+</html>
